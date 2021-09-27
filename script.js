@@ -1,9 +1,9 @@
 (function() {
   'use strict'
   // Block position for checklist for mobile
-  let smallDevice = window.matchMedia("(min-width: 768px)");
-  handleDeviceChange(smallDevice);
-  smallDevice.addListener(handleDeviceChange);
+  // let smallDevice = window.matchMedia("(min-width: 768px)");
+  // handleDeviceChange(smallDevice);
+  // smallDevice.addListener(handleDeviceChange);
   // Fetch all the selector from the HTML
   let forms = document.querySelectorAll('.requires-validation')
   let showTiger = document.getElementById('tigerCheckbox')
