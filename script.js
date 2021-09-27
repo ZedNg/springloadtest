@@ -33,12 +33,13 @@
             showValid.classList.remove("show")
           }
         }
+
         if (!form.checkValidity()) {
           event.preventDefault()
           event.stopPropagation()
         }
-        form.classList.add('was-validated');
 
+        form.classList.add('was-validated')
       }, false)
     })
 
@@ -47,8 +48,10 @@
     let showType = document.getElementById('unHide')
     if (this.checked) {
       showType.classList.add("show")
+      document.getElementById('typeTiger').required = true
     } else {
       showType.classList.remove("show")
+      document.getElementById('typeTiger').required = false
     }
   }
   // Function when screenwidth is < 600px
